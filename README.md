@@ -65,7 +65,7 @@ An interactive programming quiz application developed using core C programming c
 
 Visit my portfolio:
 
-**https://nutan-surwase.github.io/**
+(https://nutan-surwase.github.io/)
 
 ## 🔗 Connect With Me
 
