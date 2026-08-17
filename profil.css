@@ -12,6 +12,8 @@ nav {
     background-color: #1F3442;
     border-radius: 20px;
     height: 1.5cm;
+    position: sticky;
+    top:5px;
 }
 
 
