@@ -101,7 +101,7 @@
             <p>
                 CSE STUDENT · DEVELOPER · LEARNER
             </p>
-
+                  <div id="typing"> "|" </div>
             <div class="photo-bottom">
 
                 <span>INDIA</span>
@@ -767,5 +767,98 @@
 
 </div>
 
+
+
+
+
+
+
+<script>
+
+
+
+
+    let  typing = document.getElementById("typing");
+
+
+        const roles = [
+
+            "Computer Science Engineering Student",
+
+            "Web Developer",
+
+            "Java Programmer",
+
+            "Problem Solver",
+
+            "Future Software Engineer"
+
+        ];
+
+
+
+let rolindex = 0;
+let charindex = 0 ;
+let delet = false;
+
+function typtex(){
+
+const current = roles[rolindex];
+
+
+if(!delet){
+
+    typing.innerHTML = current.substring(0 , charindex + 1);
+    charindex++;
+
+    if(charindex == current.length){
+
+
+        delet = true;
+
+         setTimeout(typtex ,1000);
+         return ;
+
+    }
+
+    setTimeout(typtex ,100) ;
+}
+
+
+else {
+
+     typing.innerHTML = current.substring(0 , charindex - 1);
+    charindex--;
+
+    if(charindex==0){
+        delet = false ;
+ setTimeout(typtex ,1000);
+         return ;  
+    }
+
+      setTimeout(typtex ,100) ;
+}
+
+
+}
+
+
+
+
+typtex() ;
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+    
 </body>
 </html>
