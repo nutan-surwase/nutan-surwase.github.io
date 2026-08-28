@@ -243,6 +243,32 @@ nav .logo {
     margin-top: -100px;
 }
 
+
+
+#typing {
+    color: #91aec5;
+    font-size: 18px;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    min-height: 25px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+#typing::after {
+    content: "|";
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+
+    51%, 100% {
+        opacity: 0;
+    }
+}
 .photo-bottom {
     width: 100%;
     border-top: 1px solid #ffffff20;
